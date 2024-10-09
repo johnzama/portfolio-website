@@ -4,21 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John's Portfolio</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>John Zama</h1>
-        <p>DevOps Enthusiast & Web Developer</p>
-        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <header class="hero">
+        <nav class="navbar">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="hero-content">
+            <h1>John Zama</h1>
+            <p>DevOps Enthusiast & Web Developer</p>
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
     </header>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <!-- GitHub projects will be dynamically inserted here -->
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+        <h3>Docker</h3>
+        <div class="progress-bar"><span style="width: 90%;">90%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Git</h3>
+        <div class="progress-bar"><span style="width: 85%;">85%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Kubernetes (K8s)</h3>
+        <div class="progress-bar"><span style="width: 75%;">75%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Ansible</h3>
+        <div class="progress-bar"><span style="width: 70%;">70%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Linux</h3>
+        <div class="progress-bar"><span style="width: 85%;">85%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Ubuntu</h3>
+        <div class="progress-bar"><span style="width: 80%;">80%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Jenkins</h3>
+        <div class="progress-bar"><span style="width: 80%;">80%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Terraform</h3>
+        <div class="progress-bar"><span style="width: 75%;">75%</span></div>
+    </div>
+    <div class="skill">
+        <h3>AWS</h3>
+        <div class="progress-bar"><span style="width: 85%;">85%</span></div>
+    </div>
+    <div class="skill">
+        <h3>AWS VPC</h3>
+        <div class="progress-bar"><span style="width: 80%;">80%</span></div>
+    </div>
+    <div class="skill">
+        <h3>Prometheus</h3>
+        <div class="progress-bar"><span style="width: 70%;">70%</span></div>
+    </div>
+    <div class="skill">
+        <h3>SonarQube</h3>
+        <div class="progress-bar"><span style="width: 65%;">65%</span></div>
+    </div>
+    <!-- Add more skills if needed -->
+</section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>World Clock App</h3>
-            <p>A simple world clock app using HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/johnzama/world-clock.git" target="_blank">View on GitHub</a>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>World Clock App</h3>
+                <p>A simple world clock app using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/johnzama/world-clock.git" target="_blank">View on GitHub</a>
+            </div>
+            <!-- Add more projects similarly -->
         </div>
     </section>
 
@@ -43,6 +116,12 @@
             <button type="submit">Send</button>
         </form>
     </section>
+
+    <footer>
+        <p>John Zama &copy; 2024</p>
+        <a href="https://linkedin.com/in/johnzama" target="_blank">LinkedIn</a>
+        <a href="https://github.com/johnzama" target="_blank">GitHub</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
